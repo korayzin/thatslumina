@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>That's Lumina · Randevu Oluştur</title>
+    <meta name="description" content="Lumina ekibiyle randevu planlayın, tarih ve saat isteğinizi iletin.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-light appointment-page">
+    <header class="hero appointment-hero-shell" id="home">
+        <nav class="site-nav">
+            <a class="logo" href="index.html#home" aria-label="Lumina Studio ana sayfa">
+                <img src="images/Lumina%20Logo@4x%20dark.png" alt="Lumina Studio logo dark" class="logo-symbol logo-toned logo-toned-dark" loading="lazy">
+                <img src="images/Lumina%20Logo@4x%20light.png" alt="Lumina Studio logo light" class="logo-symbol logo-toned logo-toned-light" loading="lazy">
+                <span class="sr-only">Lumina Studio</span>
+            </a>
+            <div class="nav-panel" id="navPanel">
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Giriş</a></li>
+                    <li><a href="index.html#works">Galeri</a></li>
+                    <li><a href="index.html#process">Manifesto</a></li>
+                    <li><a href="index.html#contact">İletişim</a></li>
+                </ul>
+                <a class="nav-cta" href="randevu.html" aria-current="page">Randevu Oluştur</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navPanel" aria-label="Menüyü aç">
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+        <div class="appointment-hero" data-reveal>
+            <p class="eyebrow">randevu</p>
+            <h1>Hadi o zaman, görüşme planlayalım!</h1>
+            <p class="lede">Bu bir satış toplantısı değil, bir çözüm ortaklığı. Vizyonunuzu ve fikirlerinizi konuşalım, el sıkışalım. Sıradan olanla vakit kaybetmeyelim, potansiyeli konuşalım.</p>
+            <button class="btn primary" data-scroll="#schedule">Takvimi incele</button>
+        </div>
+    </header>
+
+    <main class="appointment-main">
+        <section class="appointment-scheduler" id="schedule">
+            <div class="appointment-calendar" id="appointmentCalendar" aria-label="Randevu takvimi"></div>
+            <form class="appointment-form" id="appointmentForm">
+                <input type="hidden" name="preferredDate" id="selectedDate">
+                <label>
+                    <span>İsim</span>
+                    <input type="text" name="name" placeholder="Adınız" required>
+                </label>
+                <label>
+                    <span>E-posta</span>
+                    <input type="email" name="email" placeholder="ornek@mail.com" required>
+                </label>
+                <label>
+                    <span>Toplantı Tercihi</span>
+                    <select name="meetingType" required>
+                        <option value="online">Online Görüşme (zorunlu tercih)</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Tercih edilen saat</span>
+                    <input type="time" name="preferredTime" min="10:00" max="22:00" required>
+                </label>
+                <label class="full">
+                    <span>Proje / Beklenti</span>
+                    <textarea name="message" rows="4" placeholder="Proje detayınızı veya koleksiyonunuzu anlatın" required></textarea>
+                </label>
+                <p class="appointment-hint">Takvimden tarih seçmeden formu tamamlayamazsınız.</p>
+                <button type="submit" class="btn primary">Randevu iste</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 That's Lumina</p>
+        <div class="footer-links">
+            <a href="index.html#works">Galeriye dön</a>
+        </div>
+    </footer>
+
+    <button class="theme-fab" id="themeSwitch" aria-label="Tema değiştir">
+        <span class="theme-label sr-only">Dark</span>
+        <span class="theme-icon theme-icon-sun" aria-hidden="true">☀︎</span>
+        <span class="theme-icon theme-icon-moon" aria-hidden="true">☾</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

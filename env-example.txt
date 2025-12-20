@@ -1,0 +1,11 @@
+# Google Sheets API Configuration
+# Google Sheets URL'inde /d/ ile /edit arasındaki kısım
+SPREADSHEET_ID=your_spreadsheet_id_here
+
+# Google Service Account Credentials
+# credentials.json dosyasındaki client_email değeri
+GOOGLE_CLIENT_EMAIL=your_service_account_email@project.iam.gserviceaccount.com
+
+# credentials.json dosyasındaki private_key değeri
+# Önemli: \n karakterlerini gerçek yeni satırlarla değiştirin
+GOOGLE_PRIVATE_KEY=-----BEGIN PRIVATE KEY-----\nYour_Private_Key_Here\n-----END PRIVATE KEY-----\n

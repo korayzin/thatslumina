@@ -1,0 +1,31 @@
+[build]
+  # Build komutu (statik dosyalar için)
+  command = "echo 'No build step required'"
+  # Yayınlanacak klasör
+  publish = "."
+
+  # Functions klasörü
+  functions = "netlify/functions"
+
+[build.environment]
+  # Node.js sürümü
+  NODE_VERSION = "18"
+
+# Redirect kuralları - API çağrılarını functions'a yönlendir
+[[redirects]]
+  from = "/api/contact"
+  to = "/.netlify/functions/contact"
+  status = 200
+  methods = ["POST", "OPTIONS"]
+
+[[redirects]]
+  from = "/api/appointments"
+  to = "/.netlify/functions/appointments"
+  status = 200
+  methods = ["POST", "OPTIONS"]
+
+# SPA desteği için tüm route'ları index.html'e yönlendir
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
