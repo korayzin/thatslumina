@@ -1,13 +1,16 @@
 const { google } = require('googleapis');
 
-export default async function handler(req, res) {
+exports.handler = async (event, context) => {
   // Sadece POST isteklerine izin ver
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
+  if (event.httpMethod !== 'POST') {
+    return {
+      statusCode: 405,
+      body: JSON.stringify({ error: 'Method not allowed' }),
+    };
   }
 
   try {
-    const { name, email, message } = req.body;
+    const { name, email, message } = JSON.parse(event.body);
 
     // Environment variables kontrolü
     const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
@@ -44,16 +47,26 @@ export default async function handler(req, res) {
       }
     });
 
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-    res.status(201).json({ ok: true });
+    return {
+      statusCode: 201,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Content-Type',
+        'Access-Control-Allow-Methods': 'POST, OPTIONS',
+      },
+      body: JSON.stringify({ ok: true }),
+    };
 
   } catch (error) {
     console.error('Contact form error:', error);
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-    res.status(500).json({ ok: false, error: 'Sunucu hatası' });
+    return {
+      statusCode: 500,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Content-Type',
+        'Access-Control-Allow-Methods': 'POST, OPTIONS',
+      },
+      body: JSON.stringify({ ok: false, error: 'Sunucu hatası' }),
+    };
   }
-}
+};
