@@ -106,14 +106,23 @@ if (revealItems.length) {
 }
 
 const sendContactMessage = async (payload, endpoint = '/api/contact') => {
-  const response = await fetch(endpoint, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload),
-  });
+  try {
+    const response = await fetch(endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
 
-  if (!response.ok) throw new Error('Gönderim başarısız');
-  return response.json();
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => ({}));
+      throw new Error(errorData.error || `HTTP ${response.status}: Gönderim başarısız`);
+    }
+    
+    return await response.json();
+  } catch (error) {
+    console.error('API çağrısı hatası:', error);
+    throw error;
+  }
 };
 
 
@@ -202,14 +211,28 @@ if (appointmentForm) {
         const original = button.textContent;
         button.textContent = 'İletiliyor...';
         button.disabled = true;
-        await sendContactMessage(payload, '/api/appointments');
-        button.textContent = 'Talep gönderildi';
-        setTimeout(() => {
-            button.textContent = original;
+        
+        try {
+            const result = await sendContactMessage(payload, '/api/appointments');
+            if (result && result.ok) {
+                button.textContent = 'Talep gönderildi ✓';
+                setTimeout(() => {
+                    button.textContent = original;
+                    button.disabled = false;
+                    appointmentForm.reset();
+                    const firstDay = calendarRoot?.querySelector('.calendar-day');
+                    if (firstDay) firstDay.click();
+                }, 2000);
+            } else {
+                throw new Error('Gönderim başarısız');
+            }
+        } catch (error) {
+            console.error('Randevu formu hatası:', error);
+            button.textContent = 'Hata! Tekrar deneyin';
             button.disabled = false;
-            appointmentForm.reset();
-            const firstDay = calendarRoot?.querySelector('.calendar-day');
-            if (firstDay) firstDay.click();
-        }, 1600);
+            setTimeout(() => {
+                button.textContent = original;
+            }, 3000);
+        }
     });
 }

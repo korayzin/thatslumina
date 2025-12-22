@@ -59,7 +59,12 @@ module.exports = async (req, res) => {
 
   } catch (error) {
     console.error('Contact form error:', error);
-    return res.status(500).json({ ok: false, error: 'Sunucu hatası' });
+    const errorMessage = error.message || 'Sunucu hatası';
+    return res.status(500).json({ 
+      ok: false, 
+      error: errorMessage,
+      details: process.env.NODE_ENV === 'development' ? error.stack : undefined
+    });
   }
 };
 
