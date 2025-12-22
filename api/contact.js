@@ -23,17 +23,30 @@ module.exports = async (req, res) => {
     // Environment variables kontrolü
     const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
     const GOOGLE_CLIENT_EMAIL = process.env.GOOGLE_CLIENT_EMAIL;
-    const GOOGLE_PRIVATE_KEY = process.env.GOOGLE_PRIVATE_KEY;
+    let GOOGLE_PRIVATE_KEY = process.env.GOOGLE_PRIVATE_KEY;
 
     if (!SPREADSHEET_ID || !GOOGLE_CLIENT_EMAIL || !GOOGLE_PRIVATE_KEY) {
       throw new Error('Environment variables eksik');
     }
 
+    // Private key'i temizle ve formatla
+    // Vercel'de \n karakterleri farklı şekilde saklanabilir
+    GOOGLE_PRIVATE_KEY = GOOGLE_PRIVATE_KEY
+      .replace(/\\n/g, '\n')  // String literal \n'leri gerçek \n'e çevir
+      .replace(/\r\n/g, '\n')  // Windows line endings
+      .replace(/\r/g, '\n')    // Mac line endings
+      .trim();                 // Başta/sonda boşlukları temizle
+
+    // Eğer BEGIN/END satırları yoksa ekle
+    if (!GOOGLE_PRIVATE_KEY.includes('BEGIN PRIVATE KEY')) {
+      throw new Error('Private key formatı geçersiz');
+    }
+
     // Google Auth
     const auth = new google.auth.GoogleAuth({
       credentials: {
-        client_email: GOOGLE_CLIENT_EMAIL,
-        private_key: GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+        client_email: GOOGLE_CLIENT_EMAIL.trim(),
+        private_key: GOOGLE_PRIVATE_KEY,
       },
       scopes: ['https://www.googleapis.com/auth/spreadsheets'],
     });
