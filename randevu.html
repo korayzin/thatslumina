@@ -91,5 +91,17 @@
     </button>
 
     <script src="script.js"></script>
+    <script type="module">
+        // Vercel Analytics
+        (async () => {
+            try {
+                const { inject } = await import('https://cdn.jsdelivr.net/npm/@vercel/analytics@1/dist/analytics.umd.js');
+                if (inject) inject();
+            } catch (error) {
+                // Vercel Analytics will work automatically on Vercel deployments
+                console.log('Vercel Analytics: Auto-enabled on Vercel');
+            }
+        })();
+    </script>
 </body>
 </html>
