@@ -18,7 +18,7 @@ module.exports = async (req, res) => {
   }
 
   try {
-    const { name, email, message } = req.body;
+    const { name, email, preferredDate, preferredTime, message } = req.body;
 
     // Environment variables kontrolü
     const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
@@ -43,14 +43,16 @@ module.exports = async (req, res) => {
     // Sheet'e veri ekle
     await sheets.spreadsheets.values.append({
       spreadsheetId: SPREADSHEET_ID,
-      range: 'Sayfa1!A:D',
+      range: 'Sayfa1!A:F',
       valueInputOption: 'USER_ENTERED',
       requestBody: {
         values: [[
           new Date().toLocaleString('tr-TR'),
           name || '',
           email || '',
-          message || ''
+          preferredDate || '',
+          preferredTime || '',
+          message || '',
         ]]
       }
     });
@@ -58,7 +60,7 @@ module.exports = async (req, res) => {
     return res.status(201).json({ ok: true });
 
   } catch (error) {
-    console.error('Contact form error:', error);
+    console.error('Appointment form error:', error);
     return res.status(500).json({ ok: false, error: 'Sunucu hatası' });
   }
 };
