@@ -14,6 +14,10 @@ const applyTheme = (mode) => {
     if (label) {
         label.textContent = mode === 'dark' ? 'Light' : 'Dark';
     }
+    const favicon = document.getElementById('favicon');
+    if (favicon) {
+        favicon.href = mode === 'dark' ? 'images/facivon dark.svg' : 'images/facivon light.svg';
+    }
 };
 
 const initialTheme = savedTheme || (prefersDark.matches ? 'dark' : 'light');
