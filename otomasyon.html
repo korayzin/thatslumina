@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>That's Lumina · Otomasyonlar</title>
+    <meta name="description"
+        content="İşletmenizde zaman kaybettiren operasyonel adımları düzenli ve görünür sistemlere dönüştürüyoruz.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="theme-light page-otomasyon">
+    <header class="hero appointment-hero-shell" id="home">
+        <nav class="site-nav">
+            <a class="logo" href="index.html#home" aria-label="Lumina Studio ana sayfa">
+                <img src="images/Lumina%20Logo@4x%20dark.png" alt="Lumina Studio logo dark"
+                    class="logo-symbol logo-toned logo-toned-dark" loading="lazy">
+                <img src="images/Lumina%20Logo@4x%20light.png" alt="Lumina Studio logo light"
+                    class="logo-symbol logo-toned logo-toned-light" loading="lazy">
+                <span class="sr-only">Lumina Studio</span>
+            </a>
+            <div class="nav-panel" id="navPanel">
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Giriş</a></li>
+                    <li><a href="icerik.html">İçerik Üretimi</a></li>
+                    <li><a href="otomasyon.html" aria-current="page">Otomasyonlar</a></li>
+                    <li><a href="hikayelerimiz.html">Hikayelerimiz</a></li>
+                    <li><a href="index.html#contact">İletişim</a></li>
+                </ul>
+                <a class="nav-cta" href="randevu.html">Sürecinizi Sistemleştirelim</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navPanel"
+                aria-label="Menüyü aç">
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+        <div class="appointment-hero" data-reveal>
+            <h1>İŞİNİZİ DAHA SİSTEMLİ HALE GETİRİN</h1>
+            <p class="lede">Tekrar eden manuel işleri, dağınık takipleri ve zaman kaybettiren operasyonel adımları daha
+                düzenli, görünür ve sürdürülebilir iş akışlarına dönüştürüyoruz.</p>
+            <div class="hero-cta" style="margin-top: 2rem;">
+                <a href="randevu.html" class="btn primary">SÜRECİNİZİ SİSTEMLEŞTİRELİM</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="automation-main">
+        <!-- 2. GİRİŞ BÖLÜMÜ -->
+        <section class="intro-section page-section">
+            <div class="intro-split" data-reveal>
+                <div class="section-heading">
+                    <h2>DAHA AZ DAĞINIKLIK,<br>DAHA NET OPERASYON</h2>
+                    <p>Bir işletmenin büyümesini zorlaştıran şey çoğu zaman tek bir büyük problem değil; her gün tekrar
+                        eden küçük takipler, unutulan adımlar, dağınık bilgiler ve kişilere bağlı ilerleyen süreçlerdir.
+                    </p>
+                    <p>Lumina, bu görünmeyen operasyonel yükü analiz eder ve işletmenizin çalışma düzenine uygun
+                        sistemler kurar. Amacımız size karmaşık teknoloji anlatmak değil; ekibinizin daha düzenli, daha
+                        takip edilebilir ve daha az manuel eforla çalışmasını sağlamaktır.</p>
+                </div>
+
+                <div class="flowchart-visual">
+                    <!-- Inputs -->
+                    <div class="fc-stage fc-stack" style="gap: 2.5rem;">
+                        <div class="fc-node fc-node-box">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="fc-node fc-node-box">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Converge -->
+                    <div class="fc-connector fc-converge-2">
+                        <svg viewBox="0 0 50 110" preserveAspectRatio="none">
+                            <path d="M0,13 C25,13 25,55 50,55" fill="none" stroke="currentColor" stroke-width="2" />
+                            <path d="M0,97 C25,97 25,55 50,55" fill="none" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                        <div class="fc-dot" style="top: 10px; left: -3px;"></div>
+                        <div class="fc-dot" style="bottom: 10px; left: -3px;"></div>
+                        <div class="fc-dot" style="top: calc(50% - 3px); right: -3px;"></div>
+                    </div>
+
+                    <!-- Filter -->
+                    <div class="fc-stage">
+                        <div class="fc-node fc-node-box">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="fc-connector fc-line"></div>
+
+                    <!-- Core Engine -->
+                    <div class="fc-stage">
+                        <div class="fc-node fc-node-circle fc-glow" style="width: 90px; height: 90px;">
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path
+                                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Main Split -->
+                    <div class="fc-connector fc-split">
+                        <svg viewBox="0 0 60 220" preserveAspectRatio="none">
+                            <path d="M0,110 L20,110 C40,110 40,20 60,20" fill="none" stroke="currentColor"
+                                stroke-width="2" />
+                            <path d="M0,110 L60,110" fill="none" stroke="currentColor" stroke-width="2" />
+                            <path d="M0,110 L20,110 C40,110 40,200 60,200" fill="none" stroke="currentColor"
+                                stroke-width="2" />
+                        </svg>
+                        <div class="fc-dot" style="top: calc(50% - 3px); left: -3px;"></div>
+                        <div class="fc-dot" style="top: calc(50% - 3px); left: 17px;"></div>
+                        <div class="fc-dot" style="top: 17px; right: -3px;"></div>
+                        <div class="fc-dot" style="top: calc(50% - 3px); right: -3px;"></div>
+                        <div class="fc-dot" style="bottom: 17px; right: -3px;"></div>
+                    </div>
+
+                    <!-- Outputs -->
+                    <div class="fc-stage fc-stack" style="gap: 1.5rem;">
+                        <div class="fc-node fc-node-box">
+                            <!-- Mail -->
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+
+                        <!-- Nested Branch for DB -->
+                        <div style="display: flex; align-items: center;">
+                            <div class="fc-node fc-node-box">
+                                <!-- Database -->
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                </svg>
+                            </div>
+                            <div class="fc-connector fc-line" style="width: 25px;">
+                                <svg viewBox="0 0 25 2" preserveAspectRatio="none">
+                                    <path d="M0,1 L25,1" fill="none" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <div class="fc-node fc-node-box">
+                                <!-- Chart/Analytics -->
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                                    <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="fc-node fc-node-box">
+                            <!-- Bell -->
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. ÜÇLÜ DEĞER KARTLARI -->
+        <section class="value-cards-section page-section">
+            <div class="services-highlights" data-reveal>
+                <article class="highlight-card">
+                    <h3>YÜKÜ SİSTEME DEVREDER</h3>
+                    <p>Tekrarlayan takipler, bildirimler ve kayıtlar kişilerin omzundan alınır. Operasyon görünmezce
+                        işler; ekip zihni hafifler.</p>
+                </article>
+                <article class="highlight-card">
+                    <h3>AKIŞI NETLEŞTİRİR</h3>
+                    <p>Hangi işin nerede durduğu, kimde beklediği ve nerede tıkandığı flu kalmaz. Süreç, herkesin
+                        okuyabildiği net bir sahneye dönüşür.</p>
+                </article>
+                <article class="highlight-card">
+                    <h3>BÜYÜMEYE YER AÇAR</h3>
+                    <p>Karmaşa azaldığında enerji günlük takiplerde harcanmaz. Ekip; müşteri, satış, üretim ve yeni
+                        fırsatlara odaklanır.</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 That's Lumina</p>
+        <div class="footer-links">
+            <a href="index.html">Ana Sayfaya dön</a>
+        </div>
+    </footer>
+
+    <button class="theme-fab" id="themeSwitch" aria-label="Tema değiştir">
+        <span class="theme-label sr-only">Dark</span>
+        <span class="theme-icon theme-icon-sun" aria-hidden="true">☀︎</span>
+        <span class="theme-icon theme-icon-moon" aria-hidden="true">☾</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
