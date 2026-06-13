@@ -7,6 +7,33 @@
     <title>That's Lumina · Otomasyonlar</title>
     <meta name="description"
         content="İşletmenizde zaman kaybettiren operasyonel adımları düzenli ve görünür sistemlere dönüştürüyoruz.">
+    <link rel="canonical" href="https://www.thatslumina.com/otomasyon.html">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="tr_TR">
+    <meta property="og:url" content="https://www.thatslumina.com/otomasyon.html">
+    <meta property="og:title" content="That's Lumina · Otomasyonlar">
+    <meta property="og:description"
+        content="İşletmenizde zaman kaybettiren operasyonel adımları düzenli ve görünür sistemlere dönüştürüyoruz.">
+    <meta property="og:image"
+        content="https://www.thatslumina.com/api/og?title=That%27s+Lumina+%C2%B7+Otomasyonlar&amp;description=%C4%B0%C5%9Fletmenizde+zaman+kaybettiren+operasyonel+ad%C4%B1mlar%C4%B1+d%C3%BCzenli+ve+g%C3%B6r%C3%BCn%C3%BCr+sistemlere+d%C3%B6n%C3%BC%C5%9Ft%C3%BCr%C3%BCyoruz.&amp;type=page">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="That's Lumina · Otomasyonlar">
+    <meta name="twitter:description"
+        content="İşletmenizde zaman kaybettiren operasyonel adımları düzenli ve görünür sistemlere dönüştürüyoruz.">
+    <meta name="twitter:image"
+        content="https://www.thatslumina.com/api/og?title=That%27s+Lumina+%C2%B7+Otomasyonlar&amp;description=%C4%B0%C5%9Fletmenizde+zaman+kaybettiren+operasyonel+ad%C4%B1mlar%C4%B1+d%C3%BCzenli+ve+g%C3%B6r%C3%BCn%C3%BCr+sistemlere+d%C3%B6n%C3%BC%C5%9Ft%C3%BCr%C3%BCyoruz.&amp;type=page">
+    <script type="application/ld+json">
+        {"@context":"https://schema.org","@type":"Organization","name":"That's Lumina","legalName":"That's Lumina","url":"https://www.thatslumina.com","logo":"https://www.thatslumina.com/images/Lumina%20Logo%404x%20dark.png","email":"hello@thatslumina.com","sameAs":["https://www.instagram.com/thatslumina"]}
+    </script>
+    <script type="application/ld+json">
+        {"@context":"https://schema.org","@type":"WebSite","name":"That's Lumina","url":"https://www.thatslumina.com","publisher":{"@type":"Organization","name":"That's Lumina","url":"https://www.thatslumina.com"}}
+    </script>
+    <script type="application/ld+json">
+        {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ana Sayfa","item":"https://www.thatslumina.com/"},{"@type":"ListItem","position":2,"name":"Otomasyonlar","item":"https://www.thatslumina.com/otomasyon.html"}]}
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -207,6 +234,14 @@
             </div>
         </section>
 
+        <section class="process-section page-section">
+            <div class="section-heading" data-reveal>
+                <p class="eyebrow">SSS</p>
+                <h2>Otomasyon hakkında sık sorulanlar</h2>
+            </div>
+            <div id="otomasyonFaq" data-faq-section></div>
+        </section>
+
     </main>
 
     <footer class="site-footer">
@@ -223,6 +258,15 @@
     </button>
 
     <script src="lib/i18n.js"></script>
+    <script src="lib/components/faq-section.js"></script>
+    <script src="lib/content/faq-data.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.FAQSection && window.OTOMASYON_FAQ_ITEMS) {
+                window.FAQSection.mountFAQSection('#otomasyonFaq', window.OTOMASYON_FAQ_ITEMS);
+            }
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 

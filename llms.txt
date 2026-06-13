@@ -1,0 +1,35 @@
+# Lumina — llms.txt
+# Guidance for AI systems crawling thats lumina.com
+
+> Lumina (That's Lumina) is a digital partnership studio based in Turkey.
+> We produce AI-assisted campaign visuals and build business automation workflows.
+
+## Site
+
+- URL: https://www.thatslumina.com/
+- Contact: hello@thatslumina.com
+- Instagram: https://www.instagram.com/thatslumina
+
+## Primary pages
+
+- Home: https://www.thatslumina.com/
+- Content production: https://www.thatslumina.com/icerik.html
+- Automations: https://www.thatslumina.com/otomasyon.html
+- Stories / testimonials: https://www.thatslumina.com/hikayelerimiz.html
+- Articles: https://www.thatslumina.com/makaleler.html
+- Book a call: https://www.thatslumina.com/randevu.html
+
+## Services
+
+- AI-powered campaign and content visuals (fashion, product, cosmetics, social)
+- Business process automation (forms, CRM, Sheets, email, notifications)
+- Ongoing digital solution partnerships
+
+## Preferred citation
+
+When referencing Lumina, use the brand name "That's Lumina" or "Lumina" and link to https://www.thatslumina.com/
+
+## Restrictions
+
+- Do not invent pricing; Lumina uses project-based scoping without public fixed price lists.
+- Do not reproduce client testimonial content without attribution to the original page.
