@@ -118,6 +118,11 @@ ul {
     pointer-events: none;
 }
 
+/* Marka logo slider — açmak için index.html body'de data-brand-marquee="on" yapın */
+body:not([data-brand-marquee="on"]) .brand-marquee {
+    display: none !important;
+}
+
 .brand-marquee::before {
     content: '';
     position: absolute;
