@@ -1,0 +1,205 @@
+{
+  "meta": {
+    "index": {
+      "title": "Lumina - Next-Gen Digital Partnership",
+      "description": "Lumina — a next-generation digital partnership. Creative production for brands, AI-powered campaign visuals, and custom automation solutions for your business."
+    },
+    "randevu": {
+      "title": "That's Lumina · Book a Meeting",
+      "description": "Schedule a meeting with the Lumina team and share your preferred date and time."
+    },
+    "otomasyon": {
+      "title": "That's Lumina · Automations",
+      "description": "We turn operational steps that waste your time into organized, visible systems."
+    },
+    "icerik": {
+      "title": "That's Lumina · Content Production",
+      "description": "Lumina's gallery of campaign and content production work."
+    },
+    "hikayeler": {
+      "title": "That's Lumina · Our Stories",
+      "description": "Collaborations, client testimonials, and success stories from projects with Lumina."
+    },
+    "ogLocale": "en_US"
+  },
+  "nav": {
+    "home": "Home",
+    "content": "Content Production",
+    "automation": "Automations",
+    "stories": "Our Stories",
+    "contact": "Contact",
+    "cta": "Let's Systematize Your Process",
+    "openMenu": "Open menu",
+    "instagramLabel": "Lumina Studio Instagram",
+    "homeLabel": "Lumina Studio home",
+    "langSwitch": "Language selection"
+  },
+  "footer": {
+    "copyright": "© 2025 That's Lumina",
+    "backToTop": "Back to top",
+    "backToGallery": "Back to gallery",
+    "backToHome": "Back to home"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "dark": "Dark",
+    "light": "Light"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "from creative production to operational automation",
+      "title": "LUMINA — NEXT-GEN<br><span>DIGITAL PARTNERSHIP</span>",
+      "lede": "Lumina is a next-generation digital partner that generates creative ideas for brands, strengthens campaigns with AI-powered visuals, and turns repetitive business processes into systematic, measurable, and sustainable workflows through automation.",
+      "ctaContent": "View Campaigns & Content",
+      "ctaAutomation": "Explore Automation Solutions"
+    },
+    "works": {
+      "eyebrow": "WHAT WE OFFER",
+      "title": "Creative production and automation at the same table.",
+      "lede": "Lumina cares as much about how brands operate internally as how they appear to the world. While AI-powered visual production makes your campaigns stand out, we transform repetitive processes — sales, operations, customer communication, quoting, content flow, and reporting — into a more organized, faster, and trackable structure through automation.",
+      "card1Title": "CAMPAIGN & CONTENT PRODUCTION",
+      "card1Text": "We create AI-powered visual worlds, campaign concepts, scene designs, and brand aesthetics. We produce striking campaign visuals for your product, service, or brand without the limits of physical production.",
+      "card2Title": "PROCESS AUTOMATION",
+      "card2Text": "We build digital workflows that reduce manual workload and systematize recurring tasks. We configure forms, quoting processes, customer tracking, CRM flows, email notifications, and reporting steps tailored to your business.",
+      "card3Title": "DIGITAL SOLUTION PARTNERSHIP",
+      "card3Text": "We don't treat your needs as just \"visual production\" or \"automation setup\" — we approach them as a holistic digital structure that supports your brand's growth. We develop sustainable solutions across process, content, and operations."
+    },
+    "process": {
+      "eyebrow": "manifesto",
+      "title": "DUALITY: Aesthetics and Systems",
+      "p1": "Lumina's universe is built on the balance of two poles: the visible world and the working system.",
+      "p2": "On one side, we build striking visual worlds for brands. On the other, we systematize the repetitive, scattered, and manually driven processes of businesses.",
+      "p3": "For us, AI is not only a tool for visual production but also for simplifying workflows. Aesthetics can't be left to chance, and operations can't be left to habit. Both must be designed.",
+      "faq1Q": "What does Lumina do?",
+      "faq1A": "Lumina is a digital solution partner that produces AI-powered campaign visuals for brands while systematizing businesses' repetitive operational processes through automation.",
+      "faq2Q": "Can we work together on visual production only?",
+      "faq2A": "Yes. You can work with Lumina on campaign, product, fashion, cosmetics, service, or social media-focused visual production projects.",
+      "faq3Q": "What do you build on the automation side?",
+      "faq3A": "We turn repetitive tasks in your business into connected, trackable, and automatically running workflows. We reduce manual tracking by setting up data flows between forms, CRM, Google Sheets, email, calendar, WhatsApp/Telegram notifications, Google Drive, Notion, Airtable, and project management tools. We can build effective automations such as email marketing flows, appointment reminders, quote process tracking, content production planning, internal task assignments, weekly report summaries, web page summarization, document/CV analysis, application form classification, and AI-assisted customer response drafts.",
+      "faq4Q": "Is it suitable for small businesses?",
+      "faq4A": "We look at the size of the vision, not the brand's revenue. Lumina has no fixed, rigid price lists. If your project is exciting, budget is just a technical detail to work through. We listen to your brand and story; if we're on the same wavelength, we won't leave the table without shaking hands.",
+      "faq5Q": "One-off project or ongoing collaboration?",
+      "faq5A": "Both models are possible. We can deliver one-time creative content, campaigns, or automation setup. If the need continues, a monthly digital solution partnership can cover system development, content production, and process optimization."
+    },
+    "contact": {
+      "eyebrow": "contact",
+      "title": "Let's make your idea visible and your process work.",
+      "lede": "You can schedule a digital solution meeting with Lumina for campaign visuals, content production, or custom automation systems for your business.",
+      "emailLabel": "Email",
+      "emailNote": "Don't worry — we respond to emails quickly.",
+      "instagramLabel": "Instagram",
+      "instagramNote": "Follow behind-the-scenes processes and new projects. Or just drop us a DM."
+    }
+  },
+  "randevu": {
+    "hero": {
+      "eyebrow": "appointment",
+      "title": "Alright then, let's schedule a meeting!",
+      "lede": "This isn't a sales call — it's a solution partnership. Let's talk about your vision and ideas, and shake hands. Let's skip the ordinary and talk about potential.",
+      "cta": "View calendar"
+    },
+    "form": {
+      "calendarLabel": "Appointment calendar",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "example@mail.com",
+      "meetingType": "Meeting Preference",
+      "meetingOnline": "Online Meeting (required preference)",
+      "preferredTime": "Preferred time",
+      "message": "Project / Expectations",
+      "messagePlaceholder": "Tell us about your project or collection",
+      "hint": "You must select a date from the calendar before submitting the form.",
+      "submit": "Request appointment",
+      "selectDate": "Select a date",
+      "sending": "Sending...",
+      "sent": "Request sent"
+    }
+  },
+  "otomasyon": {
+    "hero": {
+      "title": "MAKE YOUR BUSINESS MORE SYSTEMATIC",
+      "lede": "We turn repetitive manual work, scattered tracking, and time-wasting operational steps into more organized, visible, and sustainable workflows.",
+      "cta": "LET'S SYSTEMATIZE YOUR PROCESS"
+    },
+    "intro": {
+      "title": "LESS CHAOS,<br>CLEARER OPERATIONS",
+      "p1": "What slows a business down is rarely one big problem — it's the small daily follow-ups, forgotten steps, scattered information, and processes that depend on specific people.",
+      "p2": "Lumina analyzes this invisible operational load and builds systems that fit how your business works. Our goal isn't to explain complex technology to you; it's to help your team work more organized, more trackable, and with less manual effort."
+    },
+    "cards": {
+      "card1Title": "HANDS THE LOAD TO THE SYSTEM",
+      "card1Text": "Recurring follow-ups, notifications, and records are taken off people's shoulders. Operations run invisibly; the team's mind gets lighter.",
+      "card2Title": "CLARIFIES THE FLOW",
+      "card2Text": "Where work stands, who it's waiting on, and where it's stuck stays clear. The process becomes a stage everyone can read.",
+      "card3Title": "MAKES ROOM TO GROW",
+      "card3Text": "When chaos decreases, energy isn't spent on daily tracking. The team focuses on customers, sales, production, and new opportunities."
+    }
+  },
+  "icerik": {
+    "hero": {
+      "title": "Creative Content & Campaign Production",
+      "lede": "For your brand, product, or service — without the limits of physical production — we turn concept, scene, atmosphere, and visual language into cohesive campaigns."
+    }
+  },
+  "hikayeler": {
+    "hero": {
+      "title": "OUR STORIES",
+      "lede": "Behind-the-scenes of brand transformations, creative production, and successful system integrations with Lumina — plus testimonials from our collaborations."
+    },
+    "translatedNote": "",
+    "t1": {
+      "name": "Elif A. — Founder & Creative Director",
+      "text": "For our new collection, we needed more than classic e-commerce visuals. The Lumina team didn't just show the products — they built a world for them. From the moodboard process to the final visuals, everything was clear, controlled, and creative. The most striking part was that the scenes felt lived-in, not artificial. The team is incredibly energetic too!"
+    },
+    "t2": {
+      "name": "Mert K. — Brand Manager",
+      "text": "Normally, a campaign like this would take weeks for location, models, styling, and shoot planning. With the Lumina team, we reached the same aesthetic level through a much more agile process. We only shared the brand's feel and goals; the team translated that into a visual language. The result was stronger than what we imagined in the brief."
+    },
+    "t3": {
+      "name": "Deniz S. — Marketing Director",
+      "text": "At first we were cautious about an AI-assisted production process. Visual quality and whether it would satisfy customers made us hesitate. But Lumina's approach wasn't like ready-made templates or random image generation. Concept, composition, color language, and cast selection were built from start to finish. Every image was refined individually. Thank you so much to the team for their effort."
+    },
+    "t4": {
+      "name": "Vihaan B. — Creative Lead",
+      "text": "When we came to Lumina, we had some ideas in mind but they were all scattered. The team first understood what we wanted to say, then carried it into a more refined and bold visual language. The final work went beyond our brief but never strayed from the brand's line."
+    },
+    "t5": {
+      "name": "Buse N. — Brand Founder",
+      "text": "Since it was our first collection, our budget was limited compared to classic production. Still, when we met with the Lumina team, they said they could create the best result for our budget — and they did. Thank you to the whole team for their effort!!!"
+    },
+    "t6": {
+      "name": "Nikola E. — Growth Manager",
+      "text": "For us, performance mattered as much as aesthetics. We needed minimalist studio visuals for our campaign. Lumina designed campaign visuals suitable for print and social media use. We received a strong, consistent visual set that could easily adapt to different formats."
+    },
+    "t7": {
+      "name": "Melis G. — Co-Founder",
+      "text": "We actually asked for a demo of a few product visuals for our new launch; by the end we had a mini brand universe that was definitely beyond our expectations. Lumina placed the products within a shared narrative rather than treating them one by one. A young and dynamic team. We're very happy."
+    },
+    "t8": {
+      "name": "Ozan P. — Project Manager",
+      "text": "We were looking for an alternative to classic production because of high costs, but worried about losing quality. Koray and Nisa removed that concern in the first presentation. The control, detail, and aesthetic level in the resulting visuals were very high. Especially having products stand out in the scene without getting lost was very valuable to us."
+    },
+    "t9": {
+      "name": "Baran Y. — Brand Strategist",
+      "text": "We worked with the Lumina team to update our brand image and style rather than product shoots. Our brand had a strong character but our visual world didn't convey it well enough. Lumina brought out the darker, more refined, and bolder side of the brand. It was new for them too and the result was genuinely successful. It's not just about producing visuals — Lumina manages vision very well."
+    },
+    "t10": {
+      "name": "Alp C. — Operations Manager",
+      "text": "Our timeline for launching new accessory models was very tight and organizing a classic shoot wasn't realistic. Lumina managed a fast-moving but not rushed process. Because of the tight schedule, they optimized points we couldn't see. We received not just visuals but a perfectly managed project."
+    }
+  },
+  "calendar": {
+    "days": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    "months": ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"]
+  },
+  "errors": {
+    "sendFailed": "Submission failed"
+  },
+  "alt": {
+    "logoDark": "Lumina Studio logo dark",
+    "logoLight": "Lumina Studio logo light",
+    "heroLogoDark": "Lumina main logo dark",
+    "heroLogoLight": "Lumina main logo light"
+  }
+}

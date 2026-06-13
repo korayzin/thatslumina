@@ -146,6 +146,48 @@ body.theme-dark .logo-toned-light {
     opacity: 1;
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    z-index: 60;
+}
+
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.lang-btn {
+    border: none;
+    background: transparent;
+    color: var(--text-muted, var(--text-main));
+    cursor: pointer;
+    padding: 0.25rem 0.15rem;
+    font: inherit;
+    opacity: 0.55;
+    transition: opacity 0.2s ease, font-weight 0.2s ease;
+}
+
+.lang-btn:hover {
+    opacity: 0.85;
+}
+
+.lang-btn.active {
+    opacity: 1;
+    font-weight: 700;
+}
+
+.lang-sep {
+    opacity: 0.35;
+    user-select: none;
+}
+
 .nav-panel {
     display: flex;
     align-items: center;
@@ -1669,10 +1711,23 @@ body.theme-dark .faq-card {
         text-align: center;
     }
 
+    .nav-right {
+        gap: 0.75rem;
+    }
+
+    .lang-switch {
+        order: 1;
+    }
+
     .nav-toggle {
         display: flex;
         position: relative;
         z-index: 90;
+        order: 2;
+    }
+
+    .nav-panel {
+        order: 3;
     }
 
     .nav-close {

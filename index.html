@@ -18,7 +18,7 @@
     <meta name="twitter:title" content="Lumina - Yeni Nesil Dijital Ortaklık">
     <meta name="twitter:description"
         content="Lumina — yeni nesil dijital ortaklık. Markalar için kreatif üretim, AI destekli kampanya görselleri ve işletmenize özel otomasyon çözümleri.">
-    <script type="application/ld+json">
+    <script type="application/ld+json" id="ldJson">
         {
             "@context": "https://schema.org",
             "@type": "WebSite",
@@ -33,53 +33,60 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="theme-light">
+<body class="theme-light" data-page="index">
     <header class="hero" id="home">
         <nav class="site-nav">
             <a class="logo" href="https://www.instagram.com/thatslumina" target="_blank" rel="noopener noreferrer"
-                aria-label="Lumina Studio Instagram">
-                <img src="images/Lumina%20Logo@4x%20dark.png" alt="Lumina Studio logo dark"
+                data-i18n-attr="aria-label:nav.instagramLabel">
+                <img src="images/Lumina%20Logo@4x%20dark.png" data-i18n-attr="alt:alt.logoDark"
                     class="logo-symbol logo-toned logo-toned-dark" loading="lazy">
-                <img src="images/Lumina%20Logo@4x%20light.png" alt="Lumina Studio logo light"
+                <img src="images/Lumina%20Logo@4x%20light.png" data-i18n-attr="alt:alt.logoLight"
                     class="logo-symbol logo-toned logo-toned-light" loading="lazy">
                 <span class="sr-only">Lumina Studio</span>
             </a>
-            <div class="nav-panel" id="navPanel">
-                <ul class="nav-links">
-                    <li><a href="#home" aria-current="page">Giriş</a></li>
-                    <li><a href="icerik.html">İçerik Üretimi</a></li>
-                    <li><a href="otomasyon.html">Otomasyonlar</a></li>
-                    <li><a href="hikayelerimiz.html">Hikayelerimiz</a></li>
-                    <li><a href="#contact">İletişim</a></li>
-                </ul>
-                <a class="nav-cta" href="randevu.html">Sürecinizi Sistemleştirelim</a>
+            <div class="nav-right">
+                <div class="lang-switch" id="langSwitch" role="group" data-i18n-attr="aria-label:nav.langSwitch">
+                    <button type="button" class="lang-btn active" data-lang="tr" aria-pressed="true">TR</button>
+                    <span class="lang-sep" aria-hidden="true">|</span>
+                    <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+                </div>
+                <div class="nav-panel" id="navPanel">
+                    <ul class="nav-links">
+                        <li><a href="#home" aria-current="page" data-i18n="nav.home">Giriş</a></li>
+                        <li><a href="icerik.html" data-i18n="nav.content">İçerik Üretimi</a></li>
+                        <li><a href="otomasyon.html" data-i18n="nav.automation">Otomasyonlar</a></li>
+                        <li><a href="hikayelerimiz.html" data-i18n="nav.stories">Hikayelerimiz</a></li>
+                        <li><a href="#contact" data-i18n="nav.contact">İletişim</a></li>
+                    </ul>
+                    <a class="nav-cta" href="randevu.html" data-i18n="nav.cta">Sürecinizi Sistemleştirelim</a>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navPanel"
+                    data-i18n-attr="aria-label:nav.openMenu">
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navPanel"
-                aria-label="Menüyü aç">
-                <span></span>
-                <span></span>
-            </button>
         </nav>
         <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
         <div class="hero-center">
             <div class="hero-logo-focus" data-reveal>
-                <img src="images/Lumina%20Logo@4x%20dark.png" alt="Lumina ana logo dark"
+                <img src="images/Lumina%20Logo@4x%20dark.png" data-i18n-attr="alt:alt.heroLogoDark"
                     class="hero-logo hero-logo-dark" loading="lazy">
-                <img src="images/Lumina%20Logo@4x%20light.png" alt="Lumina ana logo light"
+                <img src="images/Lumina%20Logo@4x%20light.png" data-i18n-attr="alt:alt.heroLogoLight"
                     class="hero-logo hero-logo-light" loading="lazy">
                 <span class="sparkle sparkle-1" aria-hidden="true"></span>
                 <span class="sparkle sparkle-2" aria-hidden="true"></span>
                 <span class="sparkle sparkle-3" aria-hidden="true"></span>
             </div>
             <div class="hero-copy" data-reveal>
-                <p class="eyebrow">kreatif üretimden operasyonel otomasyona</p>
-                <h1>LUMINA — YENİ NESİL<br><span>DİJİTAL ORTAKLIK</span></h1>
-                <p class="lede">Lumina, yeni nesil dijital ortaklık olarak markalar için kreatif fikir üretir;
+                <p class="eyebrow" data-i18n="home.hero.eyebrow">kreatif üretimden operasyonel otomasyona</p>
+                <h1 data-i18n-html="home.hero.title">LUMINA — YENİ NESİL<br><span>DİJİTAL ORTAKLIK</span></h1>
+                <p class="lede" data-i18n="home.hero.lede">Lumina, yeni nesil dijital ortaklık olarak markalar için kreatif fikir üretir;
                     kampanyaları yapay zeka destekli görsellerle güçlendirir ve işletmelerin tekrar eden süreçlerini
                     otomasyonlarla sistematik, ölçülebilir ve sürdürülebilir hale getirir.</p>
                 <div class="hero-cta">
-                    <a href="icerik.html" class="btn primary">Kampanya ve İçerikleri Gör</a>
-                    <a href="otomasyon.html" class="btn ghost">Otomasyon Çözümlerini Keşfet</a>
+                    <a href="icerik.html" class="btn primary" data-i18n="home.hero.ctaContent">Kampanya ve İçerikleri Gör</a>
+                    <a href="otomasyon.html" class="btn ghost" data-i18n="home.hero.ctaAutomation">Otomasyon Çözümlerini Keşfet</a>
                 </div>
             </div>
         </div>
@@ -88,9 +95,9 @@
     <main>
         <section id="works" class="gallery-section">
             <div class="section-heading" data-reveal>
-                <p class="eyebrow">NE SUNUYORUZ?</p>
-                <h2>Kreatif üretim ve otomasyon aynı masada.</h2>
-                <p>Lumina, markaların dış dünyaya nasıl göründüğü kadar içeride nasıl çalıştığıyla da ilgilenir. AI
+                <p class="eyebrow" data-i18n="home.works.eyebrow">NE SUNUYORUZ?</p>
+                <h2 data-i18n="home.works.title">Kreatif üretim ve otomasyon aynı masada.</h2>
+                <p data-i18n="home.works.lede">Lumina, markaların dış dünyaya nasıl göründüğü kadar içeride nasıl çalıştığıyla da ilgilenir. AI
                     destekli görsel üretimle kampanyalarınızı etkileyici hale getirirken; satış, operasyon, müşteri
                     iletişimi, tekliflendirme, içerik akışı ve raporlama gibi tekrar eden süreçlerinizi otomasyonlarla
                     daha düzenli, hızlı ve takip edilebilir bir yapıya dönüştürür.</p>
@@ -98,20 +105,20 @@
 
             <div class="services-highlights" data-reveal>
                 <article class="highlight-card">
-                    <h3>KAMPANYA VE İÇERİK ÜRETİMİ</h3>
-                    <p>AI destekli görsel dünyalar, kampanya konseptleri, sahne tasarımları ve marka estetiği üretiriz.
+                    <h3 data-i18n="home.works.card1Title">KAMPANYA VE İÇERİK ÜRETİMİ</h3>
+                    <p data-i18n="home.works.card1Text">AI destekli görsel dünyalar, kampanya konseptleri, sahne tasarımları ve marka estetiği üretiriz.
                         Ürününüz, hizmetiniz veya markanız için fiziksel prodüksiyon sınırlarına takılmadan dikkat
                         çekici kampanya görselleri hazırlarız.</p>
                 </article>
                 <article class="highlight-card">
-                    <h3>SÜREÇ OTOMASYONU</h3>
-                    <p>Manuel iş yükünü azaltan, tekrar eden görevleri sistematik hale getiren dijital akışlar kurarız.
+                    <h3 data-i18n="home.works.card2Title">SÜREÇ OTOMASYONU</h3>
+                    <p data-i18n="home.works.card2Text">Manuel iş yükünü azaltan, tekrar eden görevleri sistematik hale getiren dijital akışlar kurarız.
                         Formlar, teklif süreçleri, müşteri takibi, CRM akışları, e-posta bildirimleri ve raporlama
                         adımlarını işletmenize özel yapılandırırız.</p>
                 </article>
                 <article class="highlight-card">
-                    <h3>DİJİTAL ÇÖZÜM ORTAKLIĞI</h3>
-                    <p>İhtiyacınızı yalnızca “görsel üretimi” veya “otomasyon kurulumu” olarak değil, markanızın
+                    <h3 data-i18n="home.works.card3Title">DİJİTAL ÇÖZÜM ORTAKLIĞI</h3>
+                    <p data-i18n="home.works.card3Text">İhtiyacınızı yalnızca "görsel üretimi" veya "otomasyon kurulumu" olarak değil, markanızın
                         büyümesini destekleyen bütünsel bir dijital yapı olarak ele alırız. Süreç, içerik ve operasyon
                         tarafında sürdürülebilir çözümler geliştiririz.</p>
                 </article>
@@ -121,43 +128,43 @@
         <section id="process" class="process-section">
             <div class="process-layout">
                 <div class="section-heading" data-reveal>
-                    <p class="eyebrow">manifesto</p>
-                    <h2>DÜALİTE: Estetik ve Sistem</h2>
-                    <p>Lumina’nın evreni iki kutbun dengesi üzerine kurulu: görünen dünya ve çalışan sistem.</p>
-                    <p>Bir yanda markaların dikkat çeken görsel evrenlerini inşa ederiz. Diğer yanda işletmelerin tekrar
+                    <p class="eyebrow" data-i18n="home.process.eyebrow">manifesto</p>
+                    <h2 data-i18n="home.process.title">DÜALİTE: Estetik ve Sistem</h2>
+                    <p data-i18n="home.process.p1">Lumina'nın evreni iki kutbun dengesi üzerine kurulu: görünen dünya ve çalışan sistem.</p>
+                    <p data-i18n="home.process.p2">Bir yanda markaların dikkat çeken görsel evrenlerini inşa ederiz. Diğer yanda işletmelerin tekrar
                         eden, dağılan ve manuel ilerleyen süreçlerini sistematik hale getiririz.</p>
-                    <p>Bizim için yapay zeka yalnızca görsel üretimin değil, iş akışlarını sadeleştirmenin de aracıdır.
+                    <p data-i18n="home.process.p3">Bizim için yapay zeka yalnızca görsel üretimin değil, iş akışlarını sadeleştirmenin de aracıdır.
                         Estetik tesadüfe, operasyon ise alışkanlığa bırakılamaz. İkisi de tasarlanmalıdır.</p>
                 </div>
                 <div class="faq-panel" data-reveal>
                     <div class="faq-card">
                         <button class="faq-toggle" aria-expanded="false">
-                            <span class="faq-question">Lumina ne yapar?</span>
+                            <span class="faq-question" data-i18n="home.process.faq1Q">Lumina ne yapar?</span>
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-content">
-                            <p>Lumina, markalar için AI destekli kampanya görselleri üretirken diğer bir tarafta
+                            <p data-i18n="home.process.faq1A">Lumina, markalar için AI destekli kampanya görselleri üretirken diğer bir tarafta
                                 işletmelerin tekrar eden operasyonel süreçlerini otomasyonlarla sistematik hale getiren
                                 dijital çözüm ortaklığı sunar.</p>
                         </div>
                     </div>
                     <div class="faq-card">
                         <button class="faq-toggle" aria-expanded="false">
-                            <span class="faq-question">Sadece görsel üretim için çalışabilir miyiz?</span>
+                            <span class="faq-question" data-i18n="home.process.faq2Q">Sadece görsel üretim için çalışabilir miyiz?</span>
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-content">
-                            <p>Evet. Kampanya, ürün, moda, kozmetik, hizmet veya sosyal medya odaklı görsel üretim
+                            <p data-i18n="home.process.faq2A">Evet. Kampanya, ürün, moda, kozmetik, hizmet veya sosyal medya odaklı görsel üretim
                                 projeleri için Lumina ile çalışabilirsiniz.</p>
                         </div>
                     </div>
                     <div class="faq-card">
                         <button class="faq-toggle" aria-expanded="false">
-                            <span class="faq-question">Otomasyon tarafında neler kuruyorsunuz?</span>
+                            <span class="faq-question" data-i18n="home.process.faq3Q">Otomasyon tarafında neler kuruyorsunuz?</span>
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-content">
-                            <p>İşletmenizde tekrar eden işleri birbirine bağlı, takip edilebilir ve otomatik çalışan
+                            <p data-i18n="home.process.faq3A">İşletmenizde tekrar eden işleri birbirine bağlı, takip edilebilir ve otomatik çalışan
                                 akışlara dönüştürüyoruz. Formlar, CRM, Google Sheets, e-posta, takvim, WhatsApp/Telegram
                                 bildirimleri, Google Drive, Notion, Airtable ve proje yönetim araçları arasında veri
                                 akışı kurarak manuel takip yükünü azaltıyoruz. E-mail marketing akışları, randevu
@@ -169,11 +176,11 @@
                     </div>
                     <div class="faq-card">
                         <button class="faq-toggle" aria-expanded="false">
-                            <span class="faq-question">Küçük işletmeler için uygun mu?</span>
+                            <span class="faq-question" data-i18n="home.process.faq4Q">Küçük işletmeler için uygun mu?</span>
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-content">
-                            <p>Biz markaların cirosuna değil, vizyonun büyüklüğüne bakarız. Lumina’da sabit ve katı
+                            <p data-i18n="home.process.faq4A">Biz markaların cirosuna değil, vizyonun büyüklüğüne bakarız. Lumina'da sabit ve katı
                                 fiyat listeleri yoktur. Projeniz heyecan vericiyse, bütçe sadece aşılması gereken teknik
                                 bir detaydır. Markanızı ve hikayenizi dinleriz; eğer frekansımız tutarsa, o masadan el
                                 sıkışmadan kalkmayız.</p>
@@ -181,11 +188,11 @@
                     </div>
                     <div class="faq-card">
                         <button class="faq-toggle" aria-expanded="false">
-                            <span class="faq-question">Proje mi, sürekli iş birliği mi?</span>
+                            <span class="faq-question" data-i18n="home.process.faq5Q">Proje mi, sürekli iş birliği mi?</span>
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-content">
-                            <p>İki model de mümkündür. Tek seferlik kreatif içerik, kampanya veya otomasyon kurulumu
+                            <p data-i18n="home.process.faq5A">İki model de mümkündür. Tek seferlik kreatif içerik, kampanya veya otomasyon kurulumu
                                 yapılabilir. İhtiyaç devam ediyorsa aylık dijital çözüm ortaklığı modeliyle sistemin
                                 geliştirilmesi, içeriklerin üretilmesi ve süreçlerin optimize edilmesi mümkündür.</p>
                         </div>
@@ -196,40 +203,41 @@
 
         <section id="contact" class="contact-section">
             <div class="section-heading" data-reveal>
-                <p class="eyebrow">iletişim</p>
-                <h2>Fikrinizi görünür, sürecinizi çalışır hale getirelim.</h2>
-                <p>Kampanya görselleri, içerik üretimi veya işletmenize özel otomasyon sistemleri için Lumina ile
+                <p class="eyebrow" data-i18n="home.contact.eyebrow">iletişim</p>
+                <h2 data-i18n="home.contact.title">Fikrinizi görünür, sürecinizi çalışır hale getirelim.</h2>
+                <p data-i18n="home.contact.lede">Kampanya görselleri, içerik üretimi veya işletmenize özel otomasyon sistemleri için Lumina ile
                     dijital çözüm görüşmesi planlayabilirsiniz.</p>
             </div>
             <div class="contact-info-grid" data-reveal>
                 <div class="info-card">
-                    <p class="info-eyebrow">E-Posta</p>
+                    <p class="info-eyebrow" data-i18n="home.contact.emailLabel">E-Posta</p>
                     <a href="mailto:hello@thatslumina.com" class="info-link">hello@thatslumina.com</a>
-                    <p class="info-note">Merak etmeyin e-postalarınıza hızlıca dönüyoruz.</p>
+                    <p class="info-note" data-i18n="home.contact.emailNote">Merak etmeyin e-postalarınıza hızlıca dönüyoruz.</p>
                 </div>
                 <div class="info-card">
-                    <p class="info-eyebrow">Instagram</p>
+                    <p class="info-eyebrow" data-i18n="home.contact.instagramLabel">Instagram</p>
                     <a href="https://www.instagram.com/thatslumina" target="_blank" rel="noopener noreferrer"
                         class="info-link">@thatslumina</a>
-                    <p class="info-note">Sahne arkası süreçleri ve yeni projeleri takip edin. Ya da sadece DM atın.</p>
+                    <p class="info-note" data-i18n="home.contact.instagramNote">Sahne arkası süreçleri ve yeni projeleri takip edin. Ya da sadece DM atın.</p>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p>© 2025 That's Lumina</p>
+        <p data-i18n="footer.copyright">© 2025 That's Lumina</p>
         <div class="footer-links">
-            <a href="#home">Başa dön</a>
+            <a href="#home" data-i18n="footer.backToTop">Başa dön</a>
         </div>
     </footer>
 
-    <button class="theme-fab" id="themeSwitch" aria-label="Tema değiştir">
-        <span class="theme-label sr-only">Dark</span>
+    <button class="theme-fab" id="themeSwitch" data-i18n-attr="aria-label:theme.toggle">
+        <span class="theme-label sr-only" data-i18n="theme.dark">Dark</span>
         <span class="theme-icon theme-icon-sun" aria-hidden="true">☀︎</span>
         <span class="theme-icon theme-icon-moon" aria-hidden="true">☾</span>
     </button>
 
+    <script src="lib/i18n.js"></script>
     <script src="script.js"></script>
 </body>
 

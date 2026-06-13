@@ -1,0 +1,205 @@
+{
+  "meta": {
+    "index": {
+      "title": "Lumina - Yeni Nesil Dijital Ortaklık",
+      "description": "Lumina — yeni nesil dijital ortaklık. Markalar için kreatif üretim, AI destekli kampanya görselleri ve işletmenize özel otomasyon çözümleri."
+    },
+    "randevu": {
+      "title": "That's Lumina · Randevu Oluştur",
+      "description": "Lumina ekibiyle randevu planlayın, tarih ve saat isteğinizi iletin."
+    },
+    "otomasyon": {
+      "title": "That's Lumina · Otomasyonlar",
+      "description": "İşletmenizde zaman kaybettiren operasyonel adımları düzenli ve görünür sistemlere dönüştürüyoruz."
+    },
+    "icerik": {
+      "title": "That's Lumina · İçerik Üretimi",
+      "description": "Lumina'nın hazırladığı kampanya ve içerik üretim galerisi."
+    },
+    "hikayeler": {
+      "title": "That's Lumina · Hikayelerimiz",
+      "description": "İş birliklerimiz, müşteri yorumları ve Lumina ile gerçekleştirilen başarılı projelerin hikayeleri."
+    },
+    "ogLocale": "tr_TR"
+  },
+  "nav": {
+    "home": "Giriş",
+    "content": "İçerik Üretimi",
+    "automation": "Otomasyonlar",
+    "stories": "Hikayelerimiz",
+    "contact": "İletişim",
+    "cta": "Sürecinizi Sistemleştirelim",
+    "openMenu": "Menüyü aç",
+    "instagramLabel": "Lumina Studio Instagram",
+    "homeLabel": "Lumina Studio ana sayfa",
+    "langSwitch": "Dil seçimi"
+  },
+  "footer": {
+    "copyright": "© 2025 That's Lumina",
+    "backToTop": "Başa dön",
+    "backToGallery": "Galeriye dön",
+    "backToHome": "Ana Sayfaya dön"
+  },
+  "theme": {
+    "toggle": "Tema değiştir",
+    "dark": "Dark",
+    "light": "Light"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "kreatif üretimden operasyonel otomasyona",
+      "title": "LUMINA — YENİ NESİL<br><span>DİJİTAL ORTAKLIK</span>",
+      "lede": "Lumina, yeni nesil dijital ortaklık olarak markalar için kreatif fikir üretir; kampanyaları yapay zeka destekli görsellerle güçlendirir ve işletmelerin tekrar eden süreçlerini otomasyonlarla sistematik, ölçülebilir ve sürdürülebilir hale getirir.",
+      "ctaContent": "Kampanya ve İçerikleri Gör",
+      "ctaAutomation": "Otomasyon Çözümlerini Keşfet"
+    },
+    "works": {
+      "eyebrow": "NE SUNUYORUZ?",
+      "title": "Kreatif üretim ve otomasyon aynı masada.",
+      "lede": "Lumina, markaların dış dünyaya nasıl göründüğü kadar içeride nasıl çalıştığıyla da ilgilenir. AI destekli görsel üretimle kampanyalarınızı etkileyici hale getirirken; satış, operasyon, müşteri iletişimi, tekliflendirme, içerik akışı ve raporlama gibi tekrar eden süreçlerinizi otomasyonlarla daha düzenli, hızlı ve takip edilebilir bir yapıya dönüştürür.",
+      "card1Title": "KAMPANYA VE İÇERİK ÜRETİMİ",
+      "card1Text": "AI destekli görsel dünyalar, kampanya konseptleri, sahne tasarımları ve marka estetiği üretiriz. Ürününüz, hizmetiniz veya markanız için fiziksel prodüksiyon sınırlarına takılmadan dikkat çekici kampanya görselleri hazırlarız.",
+      "card2Title": "SÜREÇ OTOMASYONU",
+      "card2Text": "Manuel iş yükünü azaltan, tekrar eden görevleri sistematik hale getiren dijital akışlar kurarız. Formlar, teklif süreçleri, müşteri takibi, CRM akışları, e-posta bildirimleri ve raporlama adımlarını işletmenize özel yapılandırırız.",
+      "card3Title": "DİJİTAL ÇÖZÜM ORTAKLIĞI",
+      "card3Text": "İhtiyacınızı yalnızca \"görsel üretimi\" veya \"otomasyon kurulumu\" olarak değil, markanızın büyümesini destekleyen bütünsel bir dijital yapı olarak ele alırız. Süreç, içerik ve operasyon tarafında sürdürülebilir çözümler geliştiririz."
+    },
+    "process": {
+      "eyebrow": "manifesto",
+      "title": "DÜALİTE: Estetik ve Sistem",
+      "p1": "Lumina'nın evreni iki kutbun dengesi üzerine kurulu: görünen dünya ve çalışan sistem.",
+      "p2": "Bir yanda markaların dikkat çeken görsel evrenlerini inşa ederiz. Diğer yanda işletmelerin tekrar eden, dağılan ve manuel ilerleyen süreçlerini sistematik hale getiririz.",
+      "p3": "Bizim için yapay zeka yalnızca görsel üretimin değil, iş akışlarını sadeleştirmenin de aracıdır. Estetik tesadüfe, operasyon ise alışkanlığa bırakılamaz. İkisi de tasarlanmalıdır.",
+      "faq1Q": "Lumina ne yapar?",
+      "faq1A": "Lumina, markalar için AI destekli kampanya görselleri üretirken diğer bir tarafta işletmelerin tekrar eden operasyonel süreçlerini otomasyonlarla sistematik hale getiren dijital çözüm ortaklığı sunar.",
+      "faq2Q": "Sadece görsel üretim için çalışabilir miyiz?",
+      "faq2A": "Evet. Kampanya, ürün, moda, kozmetik, hizmet veya sosyal medya odaklı görsel üretim projeleri için Lumina ile çalışabilirsiniz.",
+      "faq3Q": "Otomasyon tarafında neler kuruyorsunuz?",
+      "faq3A": "İşletmenizde tekrar eden işleri birbirine bağlı, takip edilebilir ve otomatik çalışan akışlara dönüştürüyoruz. Formlar, CRM, Google Sheets, e-posta, takvim, WhatsApp/Telegram bildirimleri, Google Drive, Notion, Airtable ve proje yönetim araçları arasında veri akışı kurarak manuel takip yükünü azaltıyoruz. E-mail marketing akışları, randevu hatırlatmaları, teklif süreci takibi, içerik üretim planı, ekip içi görev atamaları, haftalık rapor özetleri, web sayfası özetleme, belge/CV analizi, başvuru formlarını sınıflandırma ve yapay zeka destekli müşteri yanıt taslakları gibi etkili otomasyonlar kurabiliriz.",
+      "faq4Q": "Küçük işletmeler için uygun mu?",
+      "faq4A": "Biz markaların cirosuna değil, vizyonun büyüklüğüne bakarız. Lumina'da sabit ve katı fiyat listeleri yoktur. Projeniz heyecan vericiyse, bütçe sadece aşılması gereken teknik bir detaydır. Markanızı ve hikayenizi dinleriz; eğer frekansımız tutarsa, o masadan el sıkışmadan kalkmayız.",
+      "faq5Q": "Proje mi, sürekli iş birliği mi?",
+      "faq5A": "İki model de mümkündür. Tek seferlik kreatif içerik, kampanya veya otomasyon kurulumu yapılabilir. İhtiyaç devam ediyorsa aylık dijital çözüm ortaklığı modeliyle sistemin geliştirilmesi, içeriklerin üretilmesi ve süreçlerin optimize edilmesi mümkündür."
+    },
+    "contact": {
+      "eyebrow": "iletişim",
+      "title": "Fikrinizi görünür, sürecinizi çalışır hale getirelim.",
+      "lede": "Kampanya görselleri, içerik üretimi veya işletmenize özel otomasyon sistemleri için Lumina ile dijital çözüm görüşmesi planlayabilirsiniz.",
+      "emailLabel": "E-Posta",
+      "emailNote": "Merak etmeyin e-postalarınıza hızlıca dönüyoruz.",
+      "instagramLabel": "Instagram",
+      "instagramNote": "Sahne arkası süreçleri ve yeni projeleri takip edin. Ya da sadece DM atın."
+    }
+  },
+  "randevu": {
+    "hero": {
+      "eyebrow": "randevu",
+      "title": "Hadi o zaman, görüşme planlayalım!",
+      "lede": "Bu bir satış toplantısı değil, bir çözüm ortaklığı. Vizyonunuzu ve fikirlerinizi konuşalım, el sıkışalım. Sıradan olanla vakit kaybetmeyelim, potansiyeli konuşalım.",
+      "cta": "Takvimi incele"
+    },
+    "form": {
+      "calendarLabel": "Randevu takvimi",
+      "name": "İsim",
+      "namePlaceholder": "Adınız",
+      "email": "E-posta",
+      "emailPlaceholder": "ornek@mail.com",
+      "meetingType": "Toplantı Tercihi",
+      "meetingOnline": "Online Görüşme (zorunlu tercih)",
+      "preferredTime": "Tercih edilen saat",
+      "message": "Proje / Beklenti",
+      "messagePlaceholder": "Proje detayınızı veya koleksiyonunuzu anlatın",
+      "hint": "Takvimden tarih seçmeden formu tamamlayamazsınız.",
+      "submit": "Randevu iste",
+      "selectDate": "Tarih seçin",
+      "sending": "İletiliyor...",
+      "sent": "Talep gönderildi"
+    }
+  },
+  "otomasyon": {
+    "hero": {
+      "title": "İŞİNİZİ DAHA SİSTEMLİ HALE GETİRİN",
+      "lede": "Tekrar eden manuel işleri, dağınık takipleri ve zaman kaybettiren operasyonel adımları daha düzenli, görünür ve sürdürülebilir iş akışlarına dönüştürüyoruz.",
+      "cta": "SÜRECİNİZİ SİSTEMLEŞTİRELİM"
+    },
+    "intro": {
+      "title": "DAHA AZ DAĞINIKLIK,<br>DAHA NET OPERASYON",
+      "p1": "Bir işletmenin büyümesini zorlaştıran şey çoğu zaman tek bir büyük problem değil; her gün tekrar eden küçük takipler, unutulan adımlar, dağınık bilgiler ve kişilere bağlı ilerleyen süreçlerdir.",
+      "p2": "Lumina, bu görünmeyen operasyonel yükü analiz eder ve işletmenizin çalışma düzenine uygun sistemler kurar. Amacımız size karmaşık teknoloji anlatmak değil; ekibinizin daha düzenli, daha takip edilebilir ve daha az manuel eforla çalışmasını sağlamaktır."
+    },
+    "cards": {
+      "card1Title": "YÜKÜ SİSTEME DEVREDER",
+      "card1Text": "Tekrarlayan takipler, bildirimler ve kayıtlar kişilerin omzundan alınır. Operasyon görünmezce işler; ekip zihni hafifler.",
+      "card2Title": "AKIŞI NETLEŞTİRİR",
+      "card2Text": "Hangi işin nerede durduğu, kimde beklediği ve nerede tıkandığı flu kalmaz. Süreç, herkesin okuyabildiği net bir sahneye dönüşür.",
+      "card3Title": "BÜYÜMEYE YER AÇAR",
+      "card3Text": "Karmaşa azaldığında enerji günlük takiplerde harcanmaz. Ekip; müşteri, satış, üretim ve yeni fırsatlara odaklanır."
+    }
+  },
+  "icerik": {
+    "hero": {
+      "title": "Kreatif İçerik ve Kampanya Üretimi",
+      "lede": "Markanız, ürününüz veya hizmetiniz için fiziksel prodüksiyon sınırlarına takılmadan; konsept, sahne, atmosfer ve görsel dili bütünlüklü kampanyalara dönüştürüyoruz."
+    }
+  },
+  "hikayeler": {
+    "hero": {
+      "title": "HİKAYELERİMİZ",
+      "lede": "Lumina ile gerçekleştirilen marka dönüşümleri, yaratıcı üretimler ve başarılı sistem entegrasyonlarının perde arkası ve iş birliklerimizden gelen yorumlar."
+    },
+    "translatedNote": "(İngilizce'den çevrilmiştir.)",
+    "t1": {
+      "name": "Elif A. — Kurucu & Kreatif Direktör",
+      "text": "Yeni koleksiyonumuz için klasik e-ticaret görsellerinden daha fazlasına ihtiyacımız vardı. Lumina ekibi, ürünleri sadece göstermek yerine onlar için bir dünya kurdu. Moodboard sürecinden final görsellere kadar her şey çok net, kontrollü ve yaratıcıydı. En etkileyici tarafı, ortaya çıkan sahnelerin yapay değil; gerçekten yaşanmış gibi hissettirmesiydi. Ayrıca ekip aşırı enerjik!"
+    },
+    "t2": {
+      "name": "Mert K. — Marka Yöneticisi",
+      "text": "Normalde böyle bir kampanya için mekan, model, styling ve çekim planı haftalar sürerdi. Lumina ekibi ile aynı estetik seviyeye çok daha çevik bir süreçle ulaştık. Biz sadece markanın hissini ve hedefini anlattık; ekip bunu görsel bir dile dönüştürdü. Sonuç, brief'te hayal ettiğimizden daha güçlüydü."
+    },
+    "t3": {
+      "name": "Deniz S. — Pazarlama Direktörü",
+      "text": "Başta AI destekli bir üretim sürecine temkinli yaklaşıyorduk. Görsel kaliteleri, müşteriyi tatmin etmesi gibi durumlar bir adım geri durmamıza sebep oluyordu. Ancak Lumina'nın yaklaşımı hazır şablon ya da rastgele görsel üretimi gibi değildi. Konsept, kompozisyon, renk dili ve cast seçimi baştan sona oluşturuldu. Çıkan her görsel tek tek işlendi. Ekibe emekleri için çok teşekkür ederiz."
+    },
+    "t4": {
+      "name": "Vihaan B. — Creative Lead",
+      "text": "Lumina'ya geldiğimizde kafamızda bazı fikirler vardı ama hepsi dağınıktı. Ekip önce neyi anlatmak istediğimizi çok iyi anladı, sonra bunu daha rafine ve cesur bir görsel dile taşıdı. Final işler, bizim verdiğimiz brief'in ötesine geçti ama markanın çizgisinden hiç kopmadı."
+    },
+    "t5": {
+      "name": "Buse N. — Marka Kurucusu",
+      "text": "Henüz ilk koleksiyonumuz olduğu için bütçemiz klasik prodüksiyonlara göre sınırlıydı. Buna rağmen Lumina ekibi ile görüştüğümüzde, bütçemiz için en iyi sonucu yaratabileceklerini söylediler ve sonunda öyle de oldu. Emekleri için teşekkür ederiz tüm ekibe!!!"
+    },
+    "t6": {
+      "name": "Nikola E. — Growth Manager",
+      "text": "Bizim için estetik kadar performans da önemliydi. Kampanyamız için minimalist stüdyo görsellerine ihtiyacımız vardı. Lumina, kampanya görsellerini baskı ve sosyal medya kullanımına uygun olacak şekilde tasarladı. Farklı formatlara kolay adapte edilebilen, güçlü ve tutarlı bir görsel set teslim aldık."
+    },
+    "t7": {
+      "name": "Melis G. — Kurucu Ortak",
+      "text": "Biz aslında yeni lansmanımız için birkaç ürün görseline demo istemiştik; süreç sonunda elimizde mini bir marka evreni vardı ve kesinlikle beklentimizin üzerindeydi. Lumina, ürünleri tek tek ele almak yerine onları ortak bir anlatının içine yerleştirdi. Genç ve dinamik bir ekip. Çok memnun kaldık."
+    },
+    "t8": {
+      "name": "Ozan P. — Proje Yöneticisi",
+      "text": "Maliyetlerin yüksek olmasından kaynaklı klasik prodüksiyona alternatif arıyorduk ama kalite kaybı yaşamaktan endişeliydik. Koray ve Nisa bu endişeyi ilk sunumda ortadan kaldırdı. Ortaya çıkan görsellerde kontrol, detay ve estetik seviye çok yüksekti. Özellikle ürünlerin sahne içinde kaybolmadan öne çıkması bizim için çok değerliydi."
+    },
+    "t9": {
+      "name": "Baran Y. — Marka Stratejisti",
+      "text": "Biz ürün çekimlerinden ziyade marka imajımızı değiştirmek stilimizi güncellemek için Lumina ekibi ile çalıştık. Markamızın güçlü bir karakteri vardı ama görsel dünyamız bunu yeterince anlatamıyordu. Lumina, markanın daha karanlık, daha rafine ve daha iddialı tarafını ortaya çıkardı. Bu onlar için de bir ilkti ve sonuç gerçekten başarılıydı. Olay görsel üretebilmek değil, Lumina vizyonu çok iyi yönetiyor."
+    },
+    "t10": {
+      "name": "Alp C. — Operasyon Müdürü",
+      "text": "Yeni model aksesuarlarımızın çıkışı için takvimimiz çok sıkışıktı ve klasik çekim organize etmek gerçekçi değildi. Lumina, hızlı ilerleyen ama aceleye getirilmemiş bir süreç yönetti. Sıkışık takvim sebebiyle bizim göremediğimiz noktaları en optimal şekilde düzenledi. Sadece görsel öğe değil mükemmel yönetilmiş bir proje teslim aldık."
+    }
+  },
+  "calendar": {
+    "days": ["Paz", "Pts", "Sal", "Çar", "Per", "Cum", "Cts"],
+    "months": ["OCA", "ŞUB", "MAR", "NİS", "MAY", "HAZ", "TEM", "AĞU", "EYL", "EKİ", "KAS", "ARA"]
+  },
+  "errors": {
+    "sendFailed": "Gönderim başarısız"
+  },
+  "alt": {
+    "logoDark": "Lumina Studio logo dark",
+    "logoLight": "Lumina Studio logo light",
+    "heroLogoDark": "Lumina ana logo dark",
+    "heroLogoLight": "Lumina ana logo light"
+  }
+}

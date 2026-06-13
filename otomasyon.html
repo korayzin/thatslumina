@@ -13,59 +13,64 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="theme-light page-otomasyon">
+<body class="theme-light page-otomasyon" data-page="otomasyon">
     <header class="hero appointment-hero-shell" id="home">
         <nav class="site-nav">
-            <a class="logo" href="index.html#home" aria-label="Lumina Studio ana sayfa">
-                <img src="images/Lumina%20Logo@4x%20dark.png" alt="Lumina Studio logo dark"
+            <a class="logo" href="index.html#home" data-i18n-attr="aria-label:nav.homeLabel">
+                <img src="images/Lumina%20Logo@4x%20dark.png" data-i18n-attr="alt:alt.logoDark"
                     class="logo-symbol logo-toned logo-toned-dark" loading="lazy">
-                <img src="images/Lumina%20Logo@4x%20light.png" alt="Lumina Studio logo light"
+                <img src="images/Lumina%20Logo@4x%20light.png" data-i18n-attr="alt:alt.logoLight"
                     class="logo-symbol logo-toned logo-toned-light" loading="lazy">
                 <span class="sr-only">Lumina Studio</span>
             </a>
-            <div class="nav-panel" id="navPanel">
-                <ul class="nav-links">
-                    <li><a href="index.html#home">Giriş</a></li>
-                    <li><a href="icerik.html">İçerik Üretimi</a></li>
-                    <li><a href="otomasyon.html" aria-current="page">Otomasyonlar</a></li>
-                    <li><a href="hikayelerimiz.html">Hikayelerimiz</a></li>
-                    <li><a href="index.html#contact">İletişim</a></li>
-                </ul>
-                <a class="nav-cta" href="randevu.html">Sürecinizi Sistemleştirelim</a>
+            <div class="nav-right">
+                <div class="lang-switch" id="langSwitch" role="group" data-i18n-attr="aria-label:nav.langSwitch">
+                    <button type="button" class="lang-btn active" data-lang="tr" aria-pressed="true">TR</button>
+                    <span class="lang-sep" aria-hidden="true">|</span>
+                    <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+                </div>
+                <div class="nav-panel" id="navPanel">
+                    <ul class="nav-links">
+                        <li><a href="index.html#home" data-i18n="nav.home">Giriş</a></li>
+                        <li><a href="icerik.html" data-i18n="nav.content">İçerik Üretimi</a></li>
+                        <li><a href="otomasyon.html" aria-current="page" data-i18n="nav.automation">Otomasyonlar</a></li>
+                        <li><a href="hikayelerimiz.html" data-i18n="nav.stories">Hikayelerimiz</a></li>
+                        <li><a href="index.html#contact" data-i18n="nav.contact">İletişim</a></li>
+                    </ul>
+                    <a class="nav-cta" href="randevu.html" data-i18n="nav.cta">Sürecinizi Sistemleştirelim</a>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navPanel"
+                    data-i18n-attr="aria-label:nav.openMenu">
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navPanel"
-                aria-label="Menüyü aç">
-                <span></span>
-                <span></span>
-            </button>
         </nav>
         <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
         <div class="appointment-hero" data-reveal>
-            <h1>İŞİNİZİ DAHA SİSTEMLİ HALE GETİRİN</h1>
-            <p class="lede">Tekrar eden manuel işleri, dağınık takipleri ve zaman kaybettiren operasyonel adımları daha
+            <h1 data-i18n="otomasyon.hero.title">İŞİNİZİ DAHA SİSTEMLİ HALE GETİRİN</h1>
+            <p class="lede" data-i18n="otomasyon.hero.lede">Tekrar eden manuel işleri, dağınık takipleri ve zaman kaybettiren operasyonel adımları daha
                 düzenli, görünür ve sürdürülebilir iş akışlarına dönüştürüyoruz.</p>
             <div class="hero-cta" style="margin-top: 2rem;">
-                <a href="randevu.html" class="btn primary">SÜRECİNİZİ SİSTEMLEŞTİRELİM</a>
+                <a href="randevu.html" class="btn primary" data-i18n="otomasyon.hero.cta">SÜRECİNİZİ SİSTEMLEŞTİRELİM</a>
             </div>
         </div>
     </header>
 
     <main class="automation-main">
-        <!-- 2. GİRİŞ BÖLÜMÜ -->
         <section class="intro-section page-section">
             <div class="intro-split" data-reveal>
                 <div class="section-heading">
-                    <h2>DAHA AZ DAĞINIKLIK,<br>DAHA NET OPERASYON</h2>
-                    <p>Bir işletmenin büyümesini zorlaştıran şey çoğu zaman tek bir büyük problem değil; her gün tekrar
+                    <h2 data-i18n-html="otomasyon.intro.title">DAHA AZ DAĞINIKLIK,<br>DAHA NET OPERASYON</h2>
+                    <p data-i18n="otomasyon.intro.p1">Bir işletmenin büyümesini zorlaştıran şey çoğu zaman tek bir büyük problem değil; her gün tekrar
                         eden küçük takipler, unutulan adımlar, dağınık bilgiler ve kişilere bağlı ilerleyen süreçlerdir.
                     </p>
-                    <p>Lumina, bu görünmeyen operasyonel yükü analiz eder ve işletmenizin çalışma düzenine uygun
+                    <p data-i18n="otomasyon.intro.p2">Lumina, bu görünmeyen operasyonel yükü analiz eder ve işletmenizin çalışma düzenine uygun
                         sistemler kurar. Amacımız size karmaşık teknoloji anlatmak değil; ekibinizin daha düzenli, daha
                         takip edilebilir ve daha az manuel eforla çalışmasını sağlamaktır.</p>
                 </div>
 
                 <div class="flowchart-visual">
-                    <!-- Inputs -->
                     <div class="fc-stage fc-stack" style="gap: 2.5rem;">
                         <div class="fc-node fc-node-box">
                             <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
@@ -89,7 +94,6 @@
                         </div>
                     </div>
 
-                    <!-- Converge -->
                     <div class="fc-connector fc-converge-2">
                         <svg viewBox="0 0 50 110" preserveAspectRatio="none">
                             <path d="M0,13 C25,13 25,55 50,55" fill="none" stroke="currentColor" stroke-width="2" />
@@ -100,7 +104,6 @@
                         <div class="fc-dot" style="top: calc(50% - 3px); right: -3px;"></div>
                     </div>
 
-                    <!-- Filter -->
                     <div class="fc-stage">
                         <div class="fc-node fc-node-box">
                             <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
@@ -112,7 +115,6 @@
 
                     <div class="fc-connector fc-line"></div>
 
-                    <!-- Core Engine -->
                     <div class="fc-stage">
                         <div class="fc-node fc-node-circle fc-glow" style="width: 90px; height: 90px;">
                             <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor"
@@ -125,7 +127,6 @@
                         </div>
                     </div>
 
-                    <!-- Main Split -->
                     <div class="fc-connector fc-split">
                         <svg viewBox="0 0 60 220" preserveAspectRatio="none">
                             <path d="M0,110 L20,110 C40,110 40,20 60,20" fill="none" stroke="currentColor"
@@ -141,10 +142,8 @@
                         <div class="fc-dot" style="bottom: 17px; right: -3px;"></div>
                     </div>
 
-                    <!-- Outputs -->
                     <div class="fc-stage fc-stack" style="gap: 1.5rem;">
                         <div class="fc-node fc-node-box">
-                            <!-- Mail -->
                             <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
                                 stroke-width="2">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
@@ -153,10 +152,8 @@
                             </svg>
                         </div>
 
-                        <!-- Nested Branch for DB -->
                         <div style="display: flex; align-items: center;">
                             <div class="fc-node fc-node-box">
-                                <!-- Database -->
                                 <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
                                     stroke-width="2">
                                     <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
@@ -170,7 +167,6 @@
                                 </svg>
                             </div>
                             <div class="fc-node fc-node-box">
-                                <!-- Chart/Analytics -->
                                 <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
                                     stroke-width="2">
                                     <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
@@ -180,7 +176,6 @@
                         </div>
 
                         <div class="fc-node fc-node-box">
-                            <!-- Bell -->
                             <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
                                 stroke-width="2">
                                 <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
@@ -192,22 +187,21 @@
             </div>
         </section>
 
-        <!-- 3. ÜÇLÜ DEĞER KARTLARI -->
         <section class="value-cards-section page-section">
             <div class="services-highlights" data-reveal>
                 <article class="highlight-card">
-                    <h3>YÜKÜ SİSTEME DEVREDER</h3>
-                    <p>Tekrarlayan takipler, bildirimler ve kayıtlar kişilerin omzundan alınır. Operasyon görünmezce
+                    <h3 data-i18n="otomasyon.cards.card1Title">YÜKÜ SİSTEME DEVREDER</h3>
+                    <p data-i18n="otomasyon.cards.card1Text">Tekrarlayan takipler, bildirimler ve kayıtlar kişilerin omzundan alınır. Operasyon görünmezce
                         işler; ekip zihni hafifler.</p>
                 </article>
                 <article class="highlight-card">
-                    <h3>AKIŞI NETLEŞTİRİR</h3>
-                    <p>Hangi işin nerede durduğu, kimde beklediği ve nerede tıkandığı flu kalmaz. Süreç, herkesin
+                    <h3 data-i18n="otomasyon.cards.card2Title">AKIŞI NETLEŞTİRİR</h3>
+                    <p data-i18n="otomasyon.cards.card2Text">Hangi işin nerede durduğu, kimde beklediği ve nerede tıkandığı flu kalmaz. Süreç, herkesin
                         okuyabildiği net bir sahneye dönüşür.</p>
                 </article>
                 <article class="highlight-card">
-                    <h3>BÜYÜMEYE YER AÇAR</h3>
-                    <p>Karmaşa azaldığında enerji günlük takiplerde harcanmaz. Ekip; müşteri, satış, üretim ve yeni
+                    <h3 data-i18n="otomasyon.cards.card3Title">BÜYÜMEYE YER AÇAR</h3>
+                    <p data-i18n="otomasyon.cards.card3Text">Karmaşa azaldığında enerji günlük takiplerde harcanmaz. Ekip; müşteri, satış, üretim ve yeni
                         fırsatlara odaklanır.</p>
                 </article>
             </div>
@@ -216,18 +210,19 @@
     </main>
 
     <footer class="site-footer">
-        <p>© 2025 That's Lumina</p>
+        <p data-i18n="footer.copyright">© 2025 That's Lumina</p>
         <div class="footer-links">
-            <a href="index.html">Ana Sayfaya dön</a>
+            <a href="index.html" data-i18n="footer.backToHome">Ana Sayfaya dön</a>
         </div>
     </footer>
 
-    <button class="theme-fab" id="themeSwitch" aria-label="Tema değiştir">
-        <span class="theme-label sr-only">Dark</span>
+    <button class="theme-fab" id="themeSwitch" data-i18n-attr="aria-label:theme.toggle">
+        <span class="theme-label sr-only" data-i18n="theme.dark">Dark</span>
         <span class="theme-icon theme-icon-sun" aria-hidden="true">☀︎</span>
         <span class="theme-icon theme-icon-moon" aria-hidden="true">☾</span>
     </button>
 
+    <script src="lib/i18n.js"></script>
     <script src="script.js"></script>
 </body>
 

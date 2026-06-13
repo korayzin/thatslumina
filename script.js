@@ -7,12 +7,14 @@ const themeSwitch = document.getElementById('themeSwitch');
 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 const savedTheme = localStorage.getItem('lumina-theme');
 
+const t = (key) => (window.useLanguage ? window.useLanguage.t(key) : key);
+
 const applyTheme = (mode) => {
     body.classList.toggle('theme-dark', mode === 'dark');
     body.classList.toggle('theme-light', mode === 'light');
-    const label = themeSwitch.querySelector('.theme-label');
+    const label = themeSwitch?.querySelector('.theme-label');
     if (label) {
-        label.textContent = mode === 'dark' ? 'Light' : 'Dark';
+        label.textContent = mode === 'dark' ? t('theme.light') : t('theme.dark');
     }
 };
 
@@ -34,7 +36,7 @@ const setNavState = (open) => {
 const closeNavPanel = () => setNavState(false);
 
 if (themeSwitch) {
-    themeSwitch.addEventListener('click', (event) => {
+    themeSwitch.addEventListener('click', () => {
         const nextTheme = body.classList.contains('theme-dark') ? 'light' : 'dark';
         applyTheme(nextTheme);
         localStorage.setItem('lumina-theme', nextTheme);
@@ -112,13 +114,9 @@ const sendContactMessage = async (payload, endpoint = '/api/contact') => {
     body: JSON.stringify(payload),
   });
 
-  if (!response.ok) throw new Error('Gönderim başarısız');
+  if (!response.ok) throw new Error(t('errors.sendFailed'));
   return response.json();
 };
-
-
-
-const contactForm = document.querySelector('.contact-form');
 
 const faqCards = document.querySelectorAll('.faq-card');
 if (faqCards.length) {
@@ -142,11 +140,16 @@ if (faqCards.length) {
 }
 
 const calendarRoot = document.getElementById('appointmentCalendar');
-if (calendarRoot) {
-    const selectedDateInput = document.getElementById('selectedDate');
-    const dayNames = ['Paz', 'Pts', 'Sal', 'Çar', 'Per', 'Cum', 'Cts'];
-    const monthNames = ['OCA', 'ŞUB', 'MAR', 'NİS', 'MAY', 'HAZ', 'TEM', 'AĞU', 'EYL', 'EKİ', 'KAS', 'ARA'];
+let selectedDateInput = document.getElementById('selectedDate');
+
+const buildCalendar = () => {
+    if (!calendarRoot) return;
+    const previous = calendarRoot.querySelector('.calendar-day.active')?.dataset.date;
+    calendarRoot.innerHTML = '';
+    const dayNames = t('calendar.days');
+    const monthNames = t('calendar.months');
     const daysToShow = 10;
+
     for (let i = 0; i < daysToShow; i += 1) {
         const date = new Date();
         date.setDate(date.getDate() + i);
@@ -156,9 +159,9 @@ if (calendarRoot) {
         button.className = 'calendar-day';
         button.dataset.date = iso;
         button.innerHTML = `
-            <span class=\"day-name\">${dayNames[date.getDay()]}</span>
-            <span class=\"day-number\">${date.getDate()}</span>
-            <span class=\"day-month\">${monthNames[date.getMonth()]}</span>
+            <span class="day-name">${dayNames[date.getDay()]}</span>
+            <span class="day-number">${date.getDate()}</span>
+            <span class="day-month">${monthNames[date.getMonth()]}</span>
         `;
         button.addEventListener('click', () => {
             calendarRoot.querySelectorAll('.calendar-day').forEach((day) => day.classList.remove('active'));
@@ -168,20 +171,22 @@ if (calendarRoot) {
             }
         });
         calendarRoot.appendChild(button);
-        if (i === 0) {
-            button.classList.add('active');
-            if (selectedDateInput) {
-                selectedDateInput.value = iso;
-            }
-        }
     }
-}
+
+    const activeIso = previous || calendarRoot.querySelector('.calendar-day')?.dataset.date;
+    const activeBtn = [...calendarRoot.querySelectorAll('.calendar-day')].find((btn) => btn.dataset.date === activeIso)
+        || calendarRoot.querySelector('.calendar-day');
+    if (activeBtn) {
+        activeBtn.classList.add('active');
+        if (selectedDateInput) selectedDateInput.value = activeBtn.dataset.date;
+    }
+};
 
 const appointmentForm = document.getElementById('appointmentForm');
 if (appointmentForm) {
     appointmentForm.addEventListener('submit', async (event) => {
         event.preventDefault();
-        const button = appointmentForm.querySelector('button[type=\"submit\"]');
+        const button = appointmentForm.querySelector('button[type="submit"]');
         if (!button) return;
         const formData = new FormData(appointmentForm);
         const payload = {
@@ -195,15 +200,19 @@ if (appointmentForm) {
             requestedAt: new Date().toISOString()
         };
         if (!payload.preferredDate) {
-            button.textContent = 'Tarih seçin';
-            setTimeout(() => (button.textContent = 'Randevu iste'), 1500);
+            button.textContent = t('randevu.form.selectDate');
+            setTimeout(() => { button.textContent = t('randevu.form.submit'); }, 1500);
             return;
         }
-        const original = button.textContent;
-        button.textContent = 'İletiliyor...';
+        const original = t('randevu.form.submit');
+        button.textContent = t('randevu.form.sending');
         button.disabled = true;
-        await sendContactMessage(payload, '/api/appointments');
-        button.textContent = 'Talep gönderildi';
+        try {
+            await sendContactMessage(payload, '/api/appointments');
+            button.textContent = t('randevu.form.sent');
+        } catch {
+            button.textContent = t('errors.sendFailed');
+        }
         setTimeout(() => {
             button.textContent = original;
             button.disabled = false;
@@ -213,3 +222,14 @@ if (appointmentForm) {
         }, 1600);
     });
 }
+
+const onI18nReady = () => {
+    applyTheme(body.classList.contains('theme-dark') ? 'dark' : 'light');
+    buildCalendar();
+};
+
+document.addEventListener('i18n:ready', onI18nReady);
+document.addEventListener('languagechange', () => {
+    buildCalendar();
+    applyTheme(body.classList.contains('theme-dark') ? 'dark' : 'light');
+});

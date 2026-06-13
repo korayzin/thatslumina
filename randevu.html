@@ -12,89 +12,97 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="theme-light appointment-page">
+<body class="theme-light appointment-page" data-page="randevu">
     <header class="hero appointment-hero-shell" id="home">
         <nav class="site-nav">
-            <a class="logo" href="index.html#home" aria-label="Lumina Studio ana sayfa">
-                <img src="images/Lumina%20Logo@4x%20dark.png" alt="Lumina Studio logo dark"
+            <a class="logo" href="index.html#home" data-i18n-attr="aria-label:nav.homeLabel">
+                <img src="images/Lumina%20Logo@4x%20dark.png" data-i18n-attr="alt:alt.logoDark"
                     class="logo-symbol logo-toned logo-toned-dark" loading="lazy">
-                <img src="images/Lumina%20Logo@4x%20light.png" alt="Lumina Studio logo light"
+                <img src="images/Lumina%20Logo@4x%20light.png" data-i18n-attr="alt:alt.logoLight"
                     class="logo-symbol logo-toned logo-toned-light" loading="lazy">
                 <span class="sr-only">Lumina Studio</span>
             </a>
-            <div class="nav-panel" id="navPanel">
-                <ul class="nav-links">
-                    <li><a href="index.html#home">Giriş</a></li>
-                    <li><a href="icerik.html">İçerik Üretimi</a></li>
-                    <li><a href="otomasyon.html">Otomasyonlar</a></li>
-                    <li><a href="hikayelerimiz.html">Hikayelerimiz</a></li>
-                    <li><a href="index.html#contact">İletişim</a></li>
-                </ul>
-                <a class="nav-cta" href="randevu.html" aria-current="page">Sürecinizi Sistemleştirelim</a>
+            <div class="nav-right">
+                <div class="lang-switch" id="langSwitch" role="group" data-i18n-attr="aria-label:nav.langSwitch">
+                    <button type="button" class="lang-btn active" data-lang="tr" aria-pressed="true">TR</button>
+                    <span class="lang-sep" aria-hidden="true">|</span>
+                    <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+                </div>
+                <div class="nav-panel" id="navPanel">
+                    <ul class="nav-links">
+                        <li><a href="index.html#home" data-i18n="nav.home">Giriş</a></li>
+                        <li><a href="icerik.html" data-i18n="nav.content">İçerik Üretimi</a></li>
+                        <li><a href="otomasyon.html" data-i18n="nav.automation">Otomasyonlar</a></li>
+                        <li><a href="hikayelerimiz.html" data-i18n="nav.stories">Hikayelerimiz</a></li>
+                        <li><a href="index.html#contact" data-i18n="nav.contact">İletişim</a></li>
+                    </ul>
+                    <a class="nav-cta" href="randevu.html" aria-current="page" data-i18n="nav.cta">Sürecinizi Sistemleştirelim</a>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navPanel"
+                    data-i18n-attr="aria-label:nav.openMenu">
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navPanel"
-                aria-label="Menüyü aç">
-                <span></span>
-                <span></span>
-            </button>
         </nav>
         <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
         <div class="appointment-hero" data-reveal>
-            <p class="eyebrow">randevu</p>
-            <h1>Hadi o zaman, görüşme planlayalım!</h1>
-            <p class="lede">Bu bir satış toplantısı değil, bir çözüm ortaklığı. Vizyonunuzu ve fikirlerinizi konuşalım,
+            <p class="eyebrow" data-i18n="randevu.hero.eyebrow">randevu</p>
+            <h1 data-i18n="randevu.hero.title">Hadi o zaman, görüşme planlayalım!</h1>
+            <p class="lede" data-i18n="randevu.hero.lede">Bu bir satış toplantısı değil, bir çözüm ortaklığı. Vizyonunuzu ve fikirlerinizi konuşalım,
                 el sıkışalım. Sıradan olanla vakit kaybetmeyelim, potansiyeli konuşalım.</p>
-            <button class="btn primary" data-scroll="#schedule">Takvimi incele</button>
+            <button class="btn primary" data-scroll="#schedule" data-i18n="randevu.hero.cta">Takvimi incele</button>
         </div>
     </header>
 
     <main class="appointment-main">
         <section class="appointment-scheduler" id="schedule">
-            <div class="appointment-calendar" id="appointmentCalendar" aria-label="Randevu takvimi"></div>
+            <div class="appointment-calendar" id="appointmentCalendar" data-i18n-attr="aria-label:randevu.form.calendarLabel"></div>
             <form class="appointment-form" id="appointmentForm">
                 <input type="hidden" name="preferredDate" id="selectedDate">
                 <label>
-                    <span>İsim</span>
-                    <input type="text" name="name" placeholder="Adınız" required>
+                    <span data-i18n="randevu.form.name">İsim</span>
+                    <input type="text" name="name" data-i18n-attr="placeholder:randevu.form.namePlaceholder" required>
                 </label>
                 <label>
-                    <span>E-posta</span>
-                    <input type="email" name="email" placeholder="ornek@mail.com" required>
+                    <span data-i18n="randevu.form.email">E-posta</span>
+                    <input type="email" name="email" data-i18n-attr="placeholder:randevu.form.emailPlaceholder" required>
                 </label>
                 <label>
-                    <span>Toplantı Tercihi</span>
+                    <span data-i18n="randevu.form.meetingType">Toplantı Tercihi</span>
                     <select name="meetingType" required>
-                        <option value="online">Online Görüşme (zorunlu tercih)</option>
+                        <option value="online" data-i18n="randevu.form.meetingOnline">Online Görüşme (zorunlu tercih)</option>
                     </select>
                 </label>
                 <label>
-                    <span>Tercih edilen saat</span>
+                    <span data-i18n="randevu.form.preferredTime">Tercih edilen saat</span>
                     <input type="time" name="preferredTime" min="10:00" max="22:00" required>
                 </label>
                 <label class="full">
-                    <span>Proje / Beklenti</span>
-                    <textarea name="message" rows="4" placeholder="Proje detayınızı veya koleksiyonunuzu anlatın"
+                    <span data-i18n="randevu.form.message">Proje / Beklenti</span>
+                    <textarea name="message" rows="4" data-i18n-attr="placeholder:randevu.form.messagePlaceholder"
                         required></textarea>
                 </label>
-                <p class="appointment-hint">Takvimden tarih seçmeden formu tamamlayamazsınız.</p>
-                <button type="submit" class="btn primary">Randevu iste</button>
+                <p class="appointment-hint" data-i18n="randevu.form.hint">Takvimden tarih seçmeden formu tamamlayamazsınız.</p>
+                <button type="submit" class="btn primary" data-i18n="randevu.form.submit">Randevu iste</button>
             </form>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p>© 2025 That's Lumina</p>
+        <p data-i18n="footer.copyright">© 2025 That's Lumina</p>
         <div class="footer-links">
-            <a href="index.html#works">Galeriye dön</a>
+            <a href="index.html#works" data-i18n="footer.backToGallery">Galeriye dön</a>
         </div>
     </footer>
 
-    <button class="theme-fab" id="themeSwitch" aria-label="Tema değiştir">
-        <span class="theme-label sr-only">Dark</span>
+    <button class="theme-fab" id="themeSwitch" data-i18n-attr="aria-label:theme.toggle">
+        <span class="theme-label sr-only" data-i18n="theme.dark">Dark</span>
         <span class="theme-icon theme-icon-sun" aria-hidden="true">☀︎</span>
         <span class="theme-icon theme-icon-moon" aria-hidden="true">☾</span>
     </button>
 
+    <script src="lib/i18n.js"></script>
     <script src="script.js"></script>
 </body>
 
